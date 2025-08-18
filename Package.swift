@@ -1,16 +1,15 @@
 // swift-tools-version:5.2
-// The swift-tools-version declares the minimum version of Swift required to build this package.
+// The swift-tools-version declares the minimum version of Swift required to build.
+ PackageDescription
 
-import PackageDescription
-
-let package = Package(
+ = 
   name: "cgtcalc",
   products: [
     .library(name: "CGTCalcCore", targets: ["CGTCalcCore"]),
     .executable(name: "cgtcalc", targets: ["cgtcalc"])
   ],
   dependencies: [
-    .package(url: "https://github.com/apple/swift-argument-parser", .upToNextMinor(from: "1.1.0"))
+    .package(url: "", .upToNextMinor(from: "1.1.0"))
   ],
   targets: [
     .target(
@@ -19,7 +18,7 @@ let package = Package(
       name: "cgtcalc",
       dependencies: [
         "CGTCalcCore",
-        .product(name: "ArgumentParser", package: "swift-argument-parser")
+        .product(name: "ArgumentParser", "swift-argument-parser")
       ]),
     .testTarget(
       name: "CGTCalcCoreTests",

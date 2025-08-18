@@ -1,12 +1,3 @@
-.DS_Store
-/.build
-/Packages
-/*.xcodeproj
-xcuserdata/
-/.swiftpm
-
 # Private examples that should not be committed
-/Tests/CGTCalcCoreTests/PrivateExamples
 
 # Private samplex
-/Samples/
